@@ -1,0 +1,149 @@
+title: 星允派 STM32F103 - 探索双核新境界
+description: 星允派 STM32F103 开发板，ARM 与 RISC-V 的完美融合，双重体验，释放无限创造力！
+hero:
+  title: 探索 [双核]{.text-(--ui-primary)} 新境界
+  description: 星允派 STM32F103 开发板，ARM Cortex-M3 与 RISC-V 的完美融合，双重体验，释放无限创造力！
+  links:
+    - label: 快速入门
+      icon: i-lucide-arrow-right
+      trailing: true
+      variant: subtle
+      to: /nebula-pi-f103/docs
+      target: _blank
+      size: xl
+    - label: Clone on GitHub
+      icon: i-simple-icons-github
+      size: xl
+      color: neutral
+      variant: ghost
+      to: https://github.com/rymcu/nebula-pi-f103
+      target: _blank
+sections:
+  - title: '[双核驱动]{.text-(--ui-primary)} 性能加倍'
+    description: 同时搭载广受欢迎的 STM32F103VET6 (ARM Cortex-M3) 和新兴的 CH32V203C8T6 (RISC-V)，无论是学习研究、性能比对还是双核协作项目，一块板卡全部搞定！
+    images:
+      mobile: '/images/stm32f103-1.png'
+      desktop: '/images/stm32f103-1.png'
+    features:
+      - title: 工业级通信，即插即用
+        description: 板载 CAN 和 RS422 通信接口，配备专用接线端子，无需额外购买收发器，轻松应对工业控制、汽车电子、多机通信等场景。
+        class: border-l border-(--ui-primary) pl-4
+      - title: 丰富案例，快速上手
+        description: 提供 24 篇上手教程，涵盖 CAN 、 RS422 通信、屏幕驱动、SD 卡读写和 GPIO 等多种应用场景。
+        class: border-l border-(--ui-border) pt-4 pl-4
+features:
+  title: 掌控你的 [生产力]{.text-(--ui-primary)}
+  features:
+    - title: 调试无忧，开发顺畅
+      description: 内建针对 RISC-V (CH32) 的 CMSIS-DAP 下载器，结合独立的 Type-C 调试/下载接口，让您的开发调试流程如丝般顺滑。
+      icon: i-lucide-laugh
+      ui:
+        leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
+    - title: 海量存储，随心扩展
+      description: 板载 EEPROM、SPI Flash 还不够？更有 Micro SD 卡槽，满足您对数据记录、固件存储、文件系统等各种大容量存储需求。
+      icon: i-lucide-hard-drive
+      ui:
+        leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
+    - title: 视觉呈现，丰富多彩
+      description: 预留 0.96" OLED 直插座，提供通用 SPI 屏接口，更能驱动 3.5" 触摸彩屏。配合板载 RGB 彩灯和 8 位流水灯，状态显示直观生动。
+      icon: i-lucide-tv-minimal
+      ui:
+        leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
+    - title: IO 丰富，扩展无限
+      description: 大量 GPIO 引脚整齐排列，来自 STM32 和 CH32 的双重扩展能力，无论是传感器、模块还是自定义电路，都能轻松接入。
+      icon: i-lucide-microchip
+      ui:
+        leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
+    - title: 稳定可靠，安全保护
+      description: 方便的 5V 端子输入，板载稳压电路，更有自恢复保险丝保驾护航，让您的创意实践无后顾之忧。
+      icon: i-lucide-shield
+      ui:
+        leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
+    - title: 人机交互，触手可及
+      description: 板载多个按键（复位、启动、用户自定义），配合 LED 指示，调试交互简单直接。
+      icon: i-lucide-mouse-pointer-click
+      ui:
+        leading: bg-(--ui-bg-accented)/50 p-2 rounded-md border border-(--ui-border-muted) border-dashed
+steps:
+  title: 仅需 [三步]{.text-(--ui-primary)} 开启你的 [双核]{.text-(--ui-primary)}  探索之旅
+  items:
+    - title: Connect Your IDE
+      description: Seamlessly integrate with VS Code, JetBrains, or your preferred editor. Get started in under 2 minutes with zero configuration needed.
+      image:
+        light: '/images/light/connect.svg'
+        dark: '/images/dark/connect.svg'
+    - title: Track & Analyze
+      description: Our AI silently monitors your coding patterns to identify your peak productivity hours and potential workflow bottlenecks.
+      image:
+        light: '/images/light/optimize.svg'
+        dark: '/images/dark/optimize.svg'
+    - title: Optimize & Code Smarter
+      description: Receive personalized recommendations to enhance your coding efficiency. Watch your productivity soar with data-driven insights.
+      image:
+        light: '/images/light/track.svg'
+        dark: '/images/dark/track.svg'
+pricing:
+  title: 选择适合你的 [开发套件]{.text-(--ui-primary)}
+  description: 无论你是热衷 DIY 的创客爱好者、渴望探索 RISC-V 架构的学习者还是寻找可靠平台的工程师，星允派 STM32F103 都是您不容错过的理想之选。
+  plans:
+    - title: 标准套件
+      description: Perfect for individual developers focused on maximizing productivity.
+      price: 199 元
+      features:
+        - 星允派 STM32F103 开发板
+        - 0.96" OLED 液晶显示屏
+        - 24 篇上手教程
+        - 上手教程示例代码
+        - 开发板电路原理图
+      button:
+        label: 立即购买
+        color: neutral
+        variant: outline
+        to: '#'
+    - title: 专业套件
+      description: For bootstrappers and indie hackers.
+      price: 259 元
+      features:
+        - 星允派 STM32F103 开发板
+        - 0.96" OLED 液晶显示屏
+        - 24 篇上手教程
+        - 上手教程示例代码
+        - 开发板电路原理图
+        - 3.5" TFT 电容触摸屏
+      button:
+        label: 立即购买
+        variant: subtle
+        to: '#'
+testimonials:
+  title: Join thousands of productive [developers]{.text-(--ui-primary)}
+  description: See how developers are transforming their coding workflow and achieving more with our AI-powered platform.
+  items:
+    - quote: Since using this tool, my productivity has doubled. The AI insights helped me find my perfect coding rhythm and now I ship features twice as fast.
+      user:
+        name: 'Sarah Doe'
+        description: 'Full Stack Developer'
+        target: _blank
+        avatar:
+          src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/SarahM19'
+    - quote: Game-changer for our team. The focus tracking and smart alerts helped us reduce meeting interruptions by 40% and increased our sprint velocity.
+      user:
+        name: 'Sébastien Doe'
+        description:  'Lead Software Engineer'
+        target: _blank
+        avatar:
+          src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/atinux'
+    - quote: Finally, a productivity tool that understands developers. The AI features helped me identify my peak coding hours and now I accomplish more in less time.
+      user:
+        name: 'Benjamin Doe'
+        description:  'Senior Frontend Developer'
+        target: _blank
+        avatar:
+          src: 'https://ipx.nuxt.com/f_auto,s_192x192/gh_avatar/benjamincanac'
+cta:
+  title: 立即拥有 [星允派 STM32F103]{.text-(--ui-primary)}
+  description: 开启您的双核嵌入式探索之旅！
+  links:
+    - label: 立即购买
+      to: 'https://ui.nuxt.com/pro/purchase'
+      target: _blank
+      icon: i-lucide-shopping-cart

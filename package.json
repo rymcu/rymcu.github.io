@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-ui-pro-template-landing",
+  "name": "mon",
   "private": true,
   "type": "module",
   "scripts": {
@@ -17,7 +17,8 @@
     "@nuxt/content": "^3.4.0",
     "@nuxt/image": "^1.10.0",
     "@nuxt/ui-pro": "^3.0.2",
-    "nuxt": "^3.16.1"
+    "nuxt": "^3.16.1",
+    "nuxt-og-image": "^5.1.1"
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.3.0",
@@ -32,7 +33,20 @@
   "pnpm": {
     "onlyBuiltDependencies": [
       "better-sqlite3"
-    ]
+    ],
+    "supportedArchitectures": {
+      "os": [
+        "current",
+        "linux"
+      ],
+      "cpu": [
+        "current",
+        "x64"
+      ]
+    },
+    "overrides": {
+      "sharp": "0.33.5"
+    }
   },
-  "packageManager": "pnpm@10.7.0"
+  "packageManager": "pnpm@10.7.1"
 }

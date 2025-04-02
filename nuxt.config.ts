@@ -4,7 +4,8 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/image',
     '@nuxt/ui-pro',
-    '@nuxt/content'
+    '@nuxt/content',
+    'nuxt-og-image'
   ],
 
   devtools: {
@@ -13,14 +14,22 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
-  mdc: {
-    highlight: {
-      noApiRoute: false
+  content: {
+    build: {
+      markdown: {
+        toc: {
+          searchDepth: 1
+        }
+      }
     }
   },
 
   ui: {
     fonts: false
+  },
+
+  routeRules: {
+    '/nebula-pi-f103/docs': { redirect: '/nebula-pi-f103/docs/getting-started', prerender: false }
   },
 
   devServer: {
@@ -38,7 +47,8 @@ export default defineNuxtConfig({
     prerender: {
       routes: [
         '/'
-      ]
+      ],
+      crawlLinks: true
     }
   },
 
