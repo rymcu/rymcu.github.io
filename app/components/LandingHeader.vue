@@ -3,23 +3,24 @@ const nuxtApp = useNuxtApp()
 const { activeHeadings, updateHeadings } = useScrollspy()
 
 const items = computed(() => [{
-  label: '产品',
+  label: 'Features',
   to: '#features',
   active: activeHeadings.value.includes('features') && !activeHeadings.value.includes('pricing')
 }, {
-  label: '开源项目',
+  label: 'Pricing',
   to: '#pricing',
   active: activeHeadings.value.includes('pricing')
 }, {
-  label: '官方社区',
-  to: 'https://rymcu.com',
-  target: '_blank'
+  label: 'Testimonials',
+  to: '#testimonials',
+  active: activeHeadings.value.includes('testimonials') && !activeHeadings.value.includes('pricing')
 }])
 
 nuxtApp.hooks.hookOnce('page:finish', () => {
   updateHeadings([
     document.querySelector('#features'),
-    document.querySelector('#pricing')
+    document.querySelector('#pricing'),
+    document.querySelector('#testimonials')
   ].filter(Boolean) as Element[])
 })
 </script>
@@ -40,7 +41,7 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
       />
 
       <UButton
-        label="登录"
+        label="立即购买"
         variant="subtle"
         class="hidden lg:block"
       />
@@ -56,7 +57,7 @@ nuxtApp.hooks.hookOnce('page:finish', () => {
       />
       <UButton
         class="mt-4"
-        label="登录"
+        label="立即购买"
         variant="subtle"
         block
       />

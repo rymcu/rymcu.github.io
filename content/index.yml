@@ -19,24 +19,30 @@ hero:
       color: neutral
       variant: subtle
 sections:
-  - title: Enterprise-Grade Solutions
-    description: Transform your business with our comprehensive suite of tools. Built for scale, security, and seamless integration, our platform empowers teams to achieve more while maintaining complete control.
+  - title: 星允派 STM32F103
+    description: 探索双核新境界，ARM Cortex-M3 与 RISC-V 的完美融合，双重体验，释放无限创造力！
     id: features
     orientation: horizontal
+    images:
+      mobile: '/images/stm32f103-1.png'
+      desktop: '/images/stm32f103-1.png'
     features:
-      - name: Developer-First
-        description: Built by developers for developers, with extensive API documentation and flexible integration options.
+      - name: 双核驱动，性能加倍
+        description: 同时搭载广受欢迎的 STM32F103VET6 (ARM Cortex-M3) 和新兴的 CH32V203C8T6 (RISC-V)，无论是学习研究、性能比对还是双核协作项目，一块板卡全部搞定！
         icon: i-lucide-cog
-      - name: 99.9% Uptime
-        description: Enterprise-grade infrastructure with guaranteed reliability and automatic failover protection.
+      - name: 工业级通信，即插即用
+        description: 板载 CAN 和 RS422 通信接口，配备专用接线端子，无需额外购买收发器，轻松应对工业控制、汽车电子、多机通信等场景。
         icon: i-lucide-check
-      - name: Bank-Level Security
-        description: SOC 2 Type II certified with end-to-end encryption and advanced threat detection.
+      - name: 丰富案例，快速上手
+        description: 提供 24 篇上手教程，涵盖 CAN 、 RS422 通信、屏幕驱动、SD 卡读写和 GPIO 等多种应用场景。
         icon: i-lucide-lock
-  - title: Optimized for Growth
+  - title: STM32F407
     description: Scale your business confidently with our enterprise-ready platform. From startups to Fortune 500 companies, we provide the tools and support you need to succeed.
     orientation: horizontal
     reverse: true
+    images:
+      mobile: '/images/stm32f407-1.png'
+      desktop: '/images/stm32f407-1.png'
     features:
       - name: Lightning Fast
         description: Global CDN with sub-100ms latency and automatic performance optimization.

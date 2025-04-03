@@ -38,13 +38,23 @@ useSeoMeta({
     <UPageSection
       v-for="(section, index) in page.sections"
       :key="index"
+      v-bind="section"
       :title="section.title"
       :description="section.description"
       :orientation="section.orientation"
       :reverse="section.reverse"
       :features="section.features"
     >
-      <ImagePlaceholder />
+      <img
+        :src="section.images.desktop"
+        :alt="section.title"
+        class="hidden lg:block 2xl:hidden left-0 w-full max-w-2xl"
+      >
+      <img
+        :src="section.images.mobile"
+        :alt="section.title"
+        class="block lg:hidden 2xl:block 2xl:w-full 2xl:max-w-2xl"
+      >
     </UPageSection>
 
     <UPageSection

@@ -46,7 +46,10 @@
     },
     "overrides": {
       "sharp": "0.33.5"
-    }
+    },
+    "ignoredBuiltDependencies": [
+      "sharp"
+    ]
   },
   "packageManager": "pnpm@10.7.1"
 }

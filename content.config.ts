@@ -86,7 +86,11 @@ export const collections = {
           orientation: orientationEnum.optional(),
           features: z.array(featureItemSchema),
           links: z.array(linkSchema),
-          reverse: z.boolean().optional()
+          reverse: z.boolean().optional(),
+          images: z.object({
+            mobile: z.string().optional(),
+            desktop: z.string().optional()
+          })
         })
       ),
       features: sectionSchema.extend({
